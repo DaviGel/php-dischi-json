@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHP Dischi JSON</title>
+    <!-- Mio CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- /Mio CSS -->
+  </head>
+  <body>
+    <div id="app" v-cloak>
+      <header>
+        <h1>PHP Dischi JSON</h1>
+      </header>
+      <main>
+        <div class="container">
+          <ul>
+            <li v-for="disco in dischi">
+              {{ disco.title }} {{ disco.artist }} {{ disco.year }}
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+
+    <!-- VueJS -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- /VueJS -->
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- /Axios -->
+    <!-- Mio JS -->
+    <script src="js/main.js"></script>
+    <!-- /Mio JS -->
+  </body>
+</html>

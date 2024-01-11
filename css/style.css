@@ -1,0 +1,43 @@
+/* #region RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* #endregion */
+
+/* #region COMMON */
+
+[v-cloak] {
+  display: none;
+}
+
+/* #endregion */
+
+/* #region HEADER */
+
+header {
+  height: 70px;
+  background-color: #06131f;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 70px;
+  text-align: center;
+}
+
+/* #endregion */
+
+/* #region MAIN */
+
+main {
+  height: calc(100vh - 70px);
+  background-color: #1d2d3c;
+}
+
+main ul li {
+  list-style: none;
+}
+
+/* #endregion */
