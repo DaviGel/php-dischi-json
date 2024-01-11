@@ -18,14 +18,19 @@
           <ul class="card-wrapper">
             <li v-for="(disco, index) in dischi" @click="getDisco(index)">
               <div class="card">
-                <div class="title">{{ disco.title }}</div>
-                <div class="artist">{{ disco.artist }}</div>
-                <div class="year">{{ disco.year }}</div>
+                <div class="img"><img :src="disco.path" :alt="index" /></div>
+                <h3 class="title">{{ disco.title }}</h3>
+                <p class="artist">{{ disco.artist }}</p>
+                <h4 class="year">{{ disco.year }}</h4>
               </div>
             </li>
           </ul>
         </div>
-        <div class="modal" :class="{ 'hidden-visibility': isActive }">
+        <div class="modal" v-if="disco !== null">
+          <div class="img"><img :src="disco.path" alt="img" /></div>
+          <h3>{{ disco.title }}</h3>
+          <p>{{ disco.artist }}</p>
+          <p>{{ disco.year }}</p>
           <button class="modal-close" @click="changeStatus">X</button>
         </div>
       </main>

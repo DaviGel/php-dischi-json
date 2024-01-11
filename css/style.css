@@ -14,6 +14,13 @@
   display: none;
 }
 
+img {
+  max-width: 100%;
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+}
+
 .hidden-visibility {
   visibility: hidden;
 }
@@ -21,7 +28,7 @@
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding-top: 30px;
+  padding-top: 10px;
 }
 
 /* #endregion */
@@ -31,6 +38,8 @@
 body {
   position: relative;
   font-family: Arial, Helvetica, sans-serif;
+  overflow-y: auto;
+  line-height: 25px;
 }
 
 /* #endregion */
@@ -50,7 +59,6 @@ header {
 /* #region MAIN */
 
 main {
-  height: calc(100vh - 70px);
   background-color: #1d2d3c;
 }
 
@@ -65,10 +73,12 @@ main .modal {
   width: 90%;
   height: 90%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   transform: translate(-50%, -50%);
   background-color: #112031;
+  color: #fff;
 }
 
 main .modal-close {
@@ -89,10 +99,21 @@ main .card-wrapper {
   align-items: center;
   flex-wrap: wrap;
   gap: 70px;
+  text-align: center;
+  color: #ffffff;
 }
 
 main .card {
-  width: 270px;
+  background-color: #112030;
+  padding: 20px 0;
+}
+
+main ul li {
+  width: calc(100% / 3 - 70px);
+}
+
+main img {
+  margin-bottom: 20px;
 }
 
 /* #endregion */

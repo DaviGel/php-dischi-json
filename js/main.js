@@ -4,8 +4,7 @@ createApp({
   data() {
     return {
       dischi: [],
-      disco: [],
-      isActive: true,
+      disco: null,
     };
   },
   methods: {
@@ -16,13 +15,13 @@ createApp({
     },
 
     getDisco(index) {
-      axios.get('index.php/index=' + index).then((response) => {
+      axios.get('index.php/?index=' + index).then((response) => {
         this.disco = response.data;
       });
     },
 
     changeStatus() {
-      this.isActive = true;
+      this.disco = null;
     },
   },
   created() {
