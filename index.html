@@ -18,7 +18,9 @@
           <ul class="card-wrapper">
             <li v-for="(disco, index) in dischi" @click="getDisco(index)">
               <div class="card">
-                {{ disco.title }} {{ disco.artist }} {{ disco.year }}
+                <div class="title">{{ disco.title }}</div>
+                <div class="artist">{{ disco.artist }}</div>
+                <div class="year">{{ disco.year }}</div>
               </div>
             </li>
           </ul>
