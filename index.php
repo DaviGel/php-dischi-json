@@ -11,11 +11,12 @@ $dischi = json_decode($database);
 - print
 */
 
+$result = $dischi;
+
 //show todo
-if (isset($_POST['show'])) {
-  echo 'show dischi';
-  die;
+if (!empty($_GET['index'])) {
+  $result = $dischi[$_GET['index']];
 }
 
 header('Content-Type: application/json');
-echo json_encode(($dischi));
+echo json_encode(($result));

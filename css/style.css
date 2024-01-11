@@ -14,6 +14,25 @@
   display: none;
 }
 
+.hidden-visibility {
+  visibility: hidden;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+/* #endregion */
+
+/* #region BODY */
+
+body {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /* #endregion */
 
 /* #region HEADER */
@@ -22,7 +41,6 @@ header {
   height: 70px;
   background-color: #06131f;
   color: #fff;
-  font-family: Arial, Helvetica, sans-serif;
   line-height: 70px;
   text-align: center;
 }
@@ -38,6 +56,43 @@ main {
 
 main ul li {
   list-style: none;
+}
+
+main .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  background-color: #112031;
+}
+
+main .modal-close {
+  all: unset;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  cursor: pointer;
+}
+
+main .card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+
+main .card {
+  width: 270px;
 }
 
 /* #endregion */

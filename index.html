@@ -15,11 +15,16 @@
       </header>
       <main>
         <div class="container">
-          <ul>
-            <li v-for="disco in dischi">
-              {{ disco.title }} {{ disco.artist }} {{ disco.year }}
+          <ul class="card-wrapper">
+            <li v-for="(disco, index) in dischi" @click="getDisco(index)">
+              <div class="card">
+                {{ disco.title }} {{ disco.artist }} {{ disco.year }}
+              </div>
             </li>
           </ul>
+        </div>
+        <div class="modal" :class="{ 'hidden-visibility': isActive }">
+          <button class="modal-close" @click="changeStatus">X</button>
         </div>
       </main>
     </div>
