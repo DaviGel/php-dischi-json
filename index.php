@@ -8,9 +8,7 @@ $dischi = json_decode($database);
 
 // 3) elaborazioni
 /*
-
 - print
-
 */
 
 //show todo
