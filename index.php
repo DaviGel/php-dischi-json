@@ -7,13 +7,10 @@ $database = file_get_contents(__DIR__ . '/dischi.json');
 $dischi = json_decode($database);
 
 // 3) elaborazioni
-/*
-- print
-*/
 
 $result = $dischi;
 
-//show todo
+//show assegna dischi a result
 if (isset($_GET['index'])) {
   $result = $dischi[$_GET['index']];
 }
