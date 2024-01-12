@@ -14,7 +14,7 @@ $dischi = json_decode($database);
 $result = $dischi;
 
 //show todo
-if (!empty($_GET['index'])) {
+if (isset($_GET['index'])) {
   $result = $dischi[$_GET['index']];
 }
 
