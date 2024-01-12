@@ -10,7 +10,7 @@ $dischi = json_decode($database);
 
 $result = $dischi;
 
-//show assegna dischi a result
+//assegna dischi a result
 if (isset($_GET['index'])) {
   $result = $dischi[$_GET['index']];
 }
