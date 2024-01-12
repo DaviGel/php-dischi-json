@@ -59,6 +59,7 @@ header {
 /* #region MAIN */
 
 main {
+  height: calc(100vh - 70px);
   background-color: #1d2d3c;
 }
 
